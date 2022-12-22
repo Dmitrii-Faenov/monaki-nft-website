@@ -1,0 +1,163 @@
+@import "reset.css";
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@font-face {
+    font-family: "OTF Glusp";
+    src: url(fonts/otf\ glusp.ttf);
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url(fonts/monument\ extended\ regular.otf);
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url(fonts/monument\ extended\ black.otf.otf);
+    font-weight: 900;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+    --main-font: "Monument Extended";
+    --additional-font: "OTF Glusp";
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+    font-family: var(--main-font), sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+a {
+    color: inherit;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.navbar {
+    border-bottom: 1px solid #fff;
+
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+}
+
+.logo-text {
+    padding: 30px 60px 30px 0;
+    border-right: 1px solid #fff;
+    width: 142px;
+    height: 76px;
+}
+
+.logo-text__link {
+}
+
+.menu {
+    display: flex;
+}
+
+.menu__item {}
+
+.menu__item-link {
+    font-size: 14px;
+}
+
+.menu__item-link:link {}
+
+.menu__item-link:visited {}
+
+.menu__item-link:hover {
+    color: #7843E8;
+}
+
+.menu__item-link:focus {
+}
+
+.menu__item-link:active {
+    color: #4e2a9d;
+}
+
+.menu__item:not(:last-child) {
+    margin: 0 54px 0 0;
+}
+
+.navbar__link {
+    width: 213px;
+    height: 41px;
+    font-size: 14px;
+    line-height: 2.92;
+    border-radius: 120px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    box-shadow: 4px 4px 0px #7843E8;
+}
+
+.navbar__link:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.header {
+    border-bottom: 1px solid #fff;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__text {
+    flex: 50%;
+    padding: 0 15px 0 0;
+}
+
+.heade__heading {
+    font-family: var(--additional-font);
+    font-size: 98px;
+}
+
+.header__desc {
+    font-size: 20px;
+}
+
+.header__image {
+    padding: 17px 0 19px 0px;
+    position: relative;
+    flex: 50%;
+    border-left: 1px solid #fff;
+}
+
+.header__image-bg {
+    position: relative;
+    border-radius: 50%;
+    opacity: 0.25;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__image-nft {
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-58%);
+}
